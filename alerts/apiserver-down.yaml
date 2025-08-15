@@ -9,7 +9,7 @@ spec:
   groups:
     - name: apiserver.rules
       rules:
-        - alert: APIServerDown
+        - alert: KubikAlert-APIServerDown
           expr: absent(up{job="apiserver"} == 1)
           for: 1m
           labels:

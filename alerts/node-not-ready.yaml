@@ -9,7 +9,7 @@ spec:
   groups:
     - name: node.rules
       rules:
-        - alert: NodeNotReady
+        - alert: KubikAlert-NodeNotReady
           expr: kube_node_status_condition{condition="Ready", status="true"} == 0
           for: 1m
           labels:
