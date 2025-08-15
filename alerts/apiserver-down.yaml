@@ -3,6 +3,8 @@ kind: PrometheusRule
 metadata:
   name: apiserver-down
   namespace: monitoring
+  labels:
+    release: prometheus-stack
 spec:
   groups:
     - name: apiserver.rules

@@ -3,6 +3,8 @@ kind: PrometheusRule
 metadata:
   name: node-not-ready
   namespace: monitoring
+  labels:
+    release: prometheus-stack
 spec:
   groups:
     - name: node.rules
