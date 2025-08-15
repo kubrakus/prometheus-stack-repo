@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/kubrakus/my-k8s-repo.git
+    repoURL: https://github.com/kubrakus/prometheus-stack-repo.git  
     targetRevision: main
-    path: manifests
+    path: monitoring-ingress
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
